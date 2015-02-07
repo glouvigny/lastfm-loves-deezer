@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sync your Last.fm loved tracks to Deezer</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Let's sync all these loved tracks to Deezer!</h1>
+                <p>1. Login to <button id="deezerlogin" class="btn btn-inverse btn-lg">Deezer</button> <span id="deezerusername"></span></p>
+                <p>2. Tell us your <input id="lastfmusername" type="text" placeholder="Last.fm Username"></p>
+                <p>3. <button id="dostuff" class="btn btn-success btn-lg">...</button>
+                    <span id="status" class="hidden">
+                        <span class="label label-success" id="handled_count">0</span>
+                        /
+                        <span class="label label-primary" id="total"></span>
+                        <span class="label label-danger" id="error_count">0</span>
+                    </span>
+                </p>
+                <p>4. PROFIT!</p>
+            </div>
+            <pre></pre>
+        </div>
+
+        <div id="dz-root"></div>
+        <script src="http://cdn-files.deezer.com/js/min/dz.js"></script>
+        <script src="config.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
