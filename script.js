@@ -10,7 +10,7 @@ var loadTracks = function (username, cb) {
         '&user=' + username +
         '&api_key=' + config.lastfm_api_key +
         '&format=json' +
-        '&limit=5000';
+        '&limit=1000';
 
     var req = new XMLHttpRequest();
     req.open('GET', url, true);
